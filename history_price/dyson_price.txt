@@ -1,0 +1,7 @@
+2017-09-28 [Dyson V8 Fluffy] 0.0 => 4490
+2017-09-28 [Dyson V7 Fluffy] 0.0 => 3690
+2017-09-28 [Dyson V6 Fluffy Extra] 0.0 => 3390
+2018-03-20 [Dyson V8 Fluffy] 4490 => 3490
+2018-03-20 [Dyson V7 Fluffy] 3690 => 2990
+2018-05-01 [Dyson V8 Fluffy] 3490 => 3465
+2018-05-01 [Dyson V7 Fluffy] 2990 => 2965
