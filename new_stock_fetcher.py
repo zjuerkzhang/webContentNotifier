@@ -39,4 +39,4 @@ if __name__ == "__main__":
     new_stocks = stock_fetcher.get_interested_content()
     print "New stock today:"
     for stock in new_stocks:
-        print " "*3 + stock
+        print stock

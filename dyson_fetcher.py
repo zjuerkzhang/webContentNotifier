@@ -7,7 +7,7 @@ import codecs
 import os
 
 g_link = "http://shop.dyson.cn/vacuums/cordless-vacuums/"
-g_price_dir = "/root/uni_notify/history_price/"
+g_price_dir = "/root/webContentNotifier/history_price/"
 g_price_file = g_price_dir + "dyson_price.txt"
 
 class dyson_fetcher(general_fetcher):

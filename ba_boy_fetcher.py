@@ -7,7 +7,7 @@ import codecs
 import os
 
 g_link = "http://www.ba.de/searchapi/v1/search?kw=pari&boy"
-g_price_dir = "/root/uni_notify/history_price/"
+g_price_dir = "/root/webContentNotifier/history_price/"
 g_price_file = g_price_dir + "ba_price.txt"
 
 class ba_boy_fetcher(general_fetcher):
