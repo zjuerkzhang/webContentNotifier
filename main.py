@@ -4,8 +4,10 @@
 import threading
 import time
 import sys
+import os
 import get_config
 import send_163_mail
+import message_pusher
 from general_fetcher import general_fetcher
 from new_stock_fetcher import new_stock_fetcher
 from ba_boy_fetcher import ba_boy_fetcher
@@ -91,5 +93,6 @@ if __name__ == "__main__":
     for th in thread_array:
         th.join()
     if len(g_message) > 0:
-        send_163_mail.send_163_mail(["70437407@qq.com"], "通知推送", g_message, [])
+        message_pusher.push_message("通知推送", g_message.encode('utf8'))
+        #send_163_mail.send_163_mail(["70437407@qq.com"], "通知推送", g_message, [])
     #print g_message

@@ -4,7 +4,7 @@
         <name>新股发行</name>
         <fetcher>new_stock_fetcher</fetcher>
         <link>http://data.eastmoney.com/xg/xg/calendar.html</link>
-        <schedule>2.0</schedule>
+        <schedule>21.0</schedule>
     </section>
     <section>
         <name>雾化器价格变动通知</name>
