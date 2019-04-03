@@ -33,10 +33,10 @@ def get_keyword_from_xml(config_file = sample_config_file):
 if __name__ == '__main__':
     config = get_keyword_from_xml(sample_config_file)
     for entry in config:
-        print entry['name']
-        print " "*3 + entry['fetcher']
-        print " "*3 + entry['link']
-        print " "*3 + entry['schedule']
-        print " "*3 + "keywords:"
+        print(entry['name'])
+        print(" "*3 + entry['fetcher'])
+        print(" "*3 + entry['link'])
+        print(" "*3 + entry['schedule'])
+        print(" "*3 + "keywords:")
         for kw in entry['keywords']:
-            print " "*6 + kw
+            print(" "*6 + kw)

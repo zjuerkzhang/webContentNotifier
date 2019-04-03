@@ -29,7 +29,7 @@ def run_thread(config):
         g_message += temp_str
         lock.release()
     else:
-        print ("No content from %s" % config["name"])
+        print("No content from %s" % config["name"])
         
 def need_thread_created_for_job(schedule_str):
     now_time = time.localtime(time.time())
@@ -91,6 +91,6 @@ if __name__ == "__main__":
     for th in thread_array:
         th.join()
     if len(g_message) > 0:
-        message_pusher.push_message("通知推送", g_message.encode('utf8'))
+        message_pusher.push_message("通知推送", g_message)
         #send_163_mail.send_163_mail(["70437407@qq.com"], "通知推送", g_message, [])
     #print g_message

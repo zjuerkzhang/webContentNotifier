@@ -9,8 +9,8 @@ import requests
 g_push_server = "https://my.messge.push.ur"
 
 def push_message(subject, content):
-    quoted_sub = urllib.quote_plus(subject.replace('/', '-'))
-    quoted_cont = urllib.quote_plus(content.replace('/', '-'))
+    quoted_sub = urllib.parse.quote_plus(subject.replace('/', '-'))
+    quoted_cont = urllib.parse.quote_plus(content.replace('/', '-'))
     url = g_push_server + quoted_sub + "/" + quoted_cont
     r = requests.post(url)
     if not r.status_code == 200:

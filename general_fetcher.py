@@ -27,5 +27,5 @@ if __name__ == "__main__":
     config = {}
     config['link'] = "http://www.google.com"
     fetcher = general_fetcher(config)
-    print fetcher.get_interested_content()
+    print(fetcher.get_interested_content())
 

@@ -37,6 +37,6 @@ if __name__ == "__main__":
     config['link'] = g_link
     stock_fetcher = new_stock_fetcher(config)
     new_stocks = stock_fetcher.get_interested_content()
-    print "New stock today:"
+    print("New stock today:")
     for stock in new_stocks:
-        print stock
+        print(stock)
