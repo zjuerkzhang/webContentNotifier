@@ -5,3 +5,5 @@
 2018-03-20 [Dyson V7 Fluffy] 3690 => 2990
 2018-05-01 [Dyson V8 Fluffy] 3490 => 3465
 2018-05-01 [Dyson V7 Fluffy] 2990 => 2965
+2019-03-31 [Dyson V8 Fluffy] 3465 => 3090
+2019-03-31 [Dyson V7 Fluffy] 2965 => 2690

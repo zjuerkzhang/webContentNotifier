@@ -10,8 +10,6 @@ import send_163_mail
 import message_pusher
 from general_fetcher import general_fetcher
 from new_stock_fetcher import new_stock_fetcher
-from ba_boy_fetcher import ba_boy_fetcher
-from dyson_fetcher import dyson_fetcher
 
 g_message = ""
 lock = threading.Lock()

@@ -6,18 +6,4 @@
         <link>http://data.eastmoney.com/xg/xg/calendar.html</link>
         <schedule>21.0</schedule>
     </section>
-    <section>
-        <name>雾化器价格变动通知</name>
-        <fetcher>ba_boy_fetcher</fetcher>
-        <link>http://www.ba.de/searchapi/v1/search?kw=PARI%2Bboy</link>
-        <schedule>*/3.20</schedule>
-        <keywords>PARI 百瑞 JUNIOR BOY SX 婴儿儿童雾化器 0-12岁儿童专用|PARI 百瑞 BOY SX 雾化器 4+</keywords>
-    </section>
-    <section>
-        <name>Dyson吸尘器价格变动通知</name>
-        <fetcher>dyson_fetcher</fetcher>
-        <link>http://shop.dyson.cn/vacuums/cordless-vacuums/</link>
-        <schedule>*/2.10</schedule>
-        <keywords>Dyson V8 Fluffy|Dyson V7 Fluffy|Dyson V6 Fluffy Extra</keywords>
-    </section>
 </sections>
