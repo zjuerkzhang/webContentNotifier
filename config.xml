@@ -4,6 +4,6 @@
         <name>新股发行</name>
         <fetcher>new_stock_fetcher</fetcher>
         <link>http://data.eastmoney.com/xg/xg/calendar.html</link>
-        <schedule>21.0</schedule>
+        <schedule>22.0</schedule>
     </section>
 </sections>

@@ -6,12 +6,12 @@ import time
 import sys
 import os
 import get_config
-import send_163_mail
-import message_pusher
 from general_fetcher import general_fetcher
 from new_stock_fetcher import new_stock_fetcher
+import requests
 
 g_message = ""
+g_notifier_url = "https://bloghz.ddns.net/notify/"
 lock = threading.Lock()
 
 def run_thread(config):
@@ -91,6 +91,5 @@ if __name__ == "__main__":
     for th in thread_array:
         th.join()
     if len(g_message) > 0:
-        message_pusher.push_message("通知推送", g_message.encode('utf8'))
-        #send_163_mail.send_163_mail(["70437407@qq.com"], "通知推送", g_message, [])
+        requests.post(g_notifier_url, json={'subject': '通知推送', 'content': g_message.encode('utf8')})
     #print g_message
