@@ -11,7 +11,7 @@ from new_stock_fetcher import new_stock_fetcher
 import requests
 
 g_message = ""
-g_notifier_url = "https://bloghz.ddns.net/notify/"
+g_notifier_url = "https://bloghz.ddns.net/cmd/notify/"
 lock = threading.Lock()
 
 def run_thread(config):
