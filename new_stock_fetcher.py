@@ -10,7 +10,8 @@ class new_stock_fetcher(general_fetcher):
         soup = self.fetch_content_from_link()
         tds = soup.find_all("td", attrs={"class": "today", "valign":"top"})
         if len(tds) != 1:
-            return  []
+            print(len(tds))
+            return  ["more than 1 td with class = today"]
         else:
             divs = tds[0].find_all("div", attrs={"class": "cal_content"})
             if len(divs) != 1:

@@ -91,5 +91,5 @@ if __name__ == "__main__":
     for th in thread_array:
         th.join()
     if len(g_message) > 0:
-        requests.post(g_notifier_url, json={'subject': '通知推送', 'content': g_message.encode('utf8'), 'channel': 'qqMail'})
+        requests.post(g_notifier_url, json={'subject': '通知推送', 'content': g_message.encode('utf8'), 'channel': 'bark|telegram'})
     #print g_message
