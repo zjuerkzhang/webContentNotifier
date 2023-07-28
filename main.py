@@ -11,7 +11,7 @@ from new_stock_fetcher import new_stock_fetcher
 import requests
 
 g_message = ""
-g_notifier_url = "https://bloghz.ddns.net/cmd/notify/"
+g_notifier_url = "https://totototot.asuscomm.com/cmd/notify/"
 lock = threading.Lock()
 
 def run_thread(config):
@@ -30,7 +30,7 @@ def run_thread(config):
         lock.release()
     else:
         print ("No content from %s" % config["name"])
-        
+
 def need_thread_created_for_job(schedule_str):
     now_time = time.localtime(time.time())
     now_time_value = now_time.tm_hour * 60 + now_time.tm_min
